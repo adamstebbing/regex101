@@ -1,5 +1,5 @@
 # REGEX TUTORIAL (Version 0.2)
-
+Content inspired by https://www.grymoire.com/Unix/Regular.html
 ## Regular
 Ex. grep, sed, vi
 
