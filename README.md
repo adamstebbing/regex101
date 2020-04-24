@@ -1,4 +1,4 @@
-# REGEX TUTORIAL
+# REGEX TUTORIAL (Version 0.2)
 
 ## Regular
 Ex. grep, sed, vi
