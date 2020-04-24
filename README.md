@@ -16,24 +16,23 @@ Ex. grep, sed, vi
 
 ## Extended
 Ex. awk, nawk, egrep, grep -E
-(From|To):adamstebbing@gmail.com
-? - 0 or 1
-+ - 1 or more
+**(word|word)** - either operator, exe. (From|To):adamstebbing@gmail.com; **?** - match 0 or 1; **+** - match 1 or more
+
 Don't have to use backslashes
 {}, <>, () - not used in extended
 
-egrep "a[n]? (simple |easy )?solution"
+`egrep "a[n]? (simple |easy )?solution"`
 
 ### SED - stream editor
 & - represents input_stream
 
-sed "s/input_stream/output_stream/" - regular sed syntax
+`sed "s/input_stream/output_stream/"` - regular sed syntax
 
-sed "s_\(^[A-Z][a-z]*\s\)_THIS IS A MESSAGE FROM THE AIR FORCE \1_"
+`sed "s_\(^[A-Z][a-z]*\s\)_THIS IS A MESSAGE FROM THE AIR FORCE \1_"`
 
-sed "s_^[A-Z][a-z][a-z]*\s_THIS IS A MESSAGE FROM THE AIR FORCE &_"
+`sed "s_^[A-Z][a-z][a-z]*\s_THIS IS A MESSAGE FROM THE AIR FORCE &_"`
 
-sed -nr "s_^[A-Z][a-z]+\s_THIS IS A MESSAGE FROM THE AIR FORCE &_p"
+`sed -nr "s_^[A-Z][a-z]+\s_THIS IS A MESSAGE FROM THE AIR FORCE &_p"`
 
 **Regular Flags:** -n - quiet, -r - extended, -e <sed expression>, primarily used for multiple sed expressions, -f - read in sed commands from script (cmds should be on seperate lines), -V - version, -h - help
   
